@@ -90,6 +90,53 @@ Despues de importar el workflow en n8n, debes configurar tus propias claves de a
 - **Educativo**: Formato pregunta-respuesta con muletillas de transicion
 - **Narrativo**: Formato titulo-parrafo para contar historias
 
+## Campos del Formulario
+
+### Configuracion Principal
+
+| Campo | Tipo | Descripcion |
+|-------|------|-------------|
+| `modo_video` | Dropdown | Selecciona entre `narrativa` o `educativa` |
+| `input_texto` | Textarea | Texto base para generar el video |
+| `usar_ia` | Checkbox | Si esta activo, la IA genera y expande el contenido |
+| `num_escenas` | Numero | Cantidad de escenas a generar (default: 5) |
+| `caracteres_objetivo` | Numero | Longitud aproximada del guion (default: 3000) |
+| `idioma` | Dropdown | Idioma del video: `es`, `en`, `pt` |
+| `formato_video` | Dropdown | Resolucion: `720p`, `360p`, o ambas |
+
+### Personalizacion Visual
+
+| Campo | Tipo | Descripcion |
+|-------|------|-------------|
+| `filtro` | Dropdown | Estilo visual: `cinema`, `vintage`, `noir`, `cyber` |
+| `color_titulo` | Color | Color del titulo (hex, default: #FFD700) |
+| `color_parrafo` | Color | Color del texto narrativo (hex, default: #FFFFFF) |
+| `color_pregunta` | Color | Color de preguntas en modo educativo (hex, default: #00BFFF) |
+| `color_respuesta` | Color | Color de respuestas en modo educativo (hex, default: #32CD32) |
+| `fuente_titulo` | Dropdown | Tipografia para titulos |
+| `fuente_parrafo` | Dropdown | Tipografia para parrafos |
+| `fuente_pregunta` | Dropdown | Tipografia para preguntas |
+| `fuente_respuesta` | Dropdown | Tipografia para respuestas |
+| `tamano_fuente` | Numero | Tamano base de la fuente (default: 48) |
+
+### Margenes y Alineacion
+
+| Campo | Tipo | Descripcion |
+|-------|------|-------------|
+| `margen_arriba` | Numero | Espacio superior en pixeles (default: 50) |
+| `margen_izquierda` | Numero | Espacio izquierdo en pixeles (default: 50) |
+| `margen_derecha` | Numero | Espacio derecho en pixeles (default: 50) |
+| `margen_abajo` | Numero | Espacio inferior en pixeles (default: 50) |
+| `alineacion` | Dropdown | Alineacion del texto: `izquierda`, `centro`, `derecha` |
+
+### Opciones Avanzadas
+
+| Campo | Tipo | Descripcion |
+|-------|------|-------------|
+| `fix_visual` | Textarea | Correcciones por escena (ej: "Escena 2: fondo oscuro") |
+| `es_correccion` | Checkbox | Solo regenera slides sin llamar a DALL-E |
+| `forzar_video` | Checkbox | Genera video sin procesar escenas nuevas |
+
 ## Scripts
 
 | Script | Funcion |
