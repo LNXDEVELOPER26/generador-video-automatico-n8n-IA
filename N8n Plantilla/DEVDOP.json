@@ -1,0 +1,1295 @@
+﻿{
+  "name": "DEVDOP_V4_VISUAL_FIX",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "DEVDOP - Generador de Videos",
+        "formDescription": "Crea videos narrativos o educativos con IA",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "modo_video",
+              "fieldType": "dropdown",
+              "defaultValue": "narrativa",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "narrativa"
+                  },
+                  {
+                    "option": "educativa"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "input_texto",
+              "fieldType": "textarea",
+              "placeholder": "NARRATIVA: Pega tu guion\nEDUCATIVA: Pregunta: ... Respuesta: ..."
+            },
+            {
+              "fieldLabel": "usar_ia",
+              "fieldType": "checkbox",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Generar con IA"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "num_escenas",
+              "placeholder": "5",
+              "defaultValue": "5",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "caracteres_objetivo",
+              "placeholder": "3000",
+              "defaultValue": "3000",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "filtro",
+              "fieldType": "dropdown",
+              "defaultValue": "cinema",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "cinema"
+                  },
+                  {
+                    "option": "vintage"
+                  },
+                  {
+                    "option": "noir"
+                  },
+                  {
+                    "option": "cyber"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "idioma",
+              "fieldType": "dropdown",
+              "defaultValue": "es",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "es"
+                  },
+                  {
+                    "option": "en"
+                  },
+                  {
+                    "option": "pt"
+                  }
+                ]
+              },
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "color_titulo",
+              "defaultValue": "#FFD700"
+            },
+            {
+              "fieldLabel": "color_parrafo",
+              "defaultValue": "#FFFFFF"
+            },
+            {
+              "fieldLabel": "color_pregunta",
+              "defaultValue": "#00BFFF"
+            },
+            {
+              "fieldLabel": "color_respuesta",
+              "defaultValue": "#32CD32"
+            },
+            {
+              "fieldLabel": "fuente_titulo",
+              "fieldType": "dropdown",
+              "defaultValue": "roboto",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "roboto"
+                  },
+                  {
+                    "option": "poppins"
+                  },
+                  {
+                    "option": "inter"
+                  },
+                  {
+                    "option": "montserrat"
+                  },
+                  {
+                    "option": "open-sans"
+                  },
+                  {
+                    "option": "nunito"
+                  },
+                  {
+                    "option": "mulish"
+                  },
+                  {
+                    "option": "manrope"
+                  },
+                  {
+                    "option": "work-sans"
+                  },
+                  {
+                    "option": "dm-sans"
+                  },
+                  {
+                    "option": "heebo"
+                  },
+                  {
+                    "option": "archivo"
+                  },
+                  {
+                    "option": "cinzel"
+                  },
+                  {
+                    "option": "cinzel-decorative"
+                  },
+                  {
+                    "option": "cormorant"
+                  },
+                  {
+                    "option": "ibm-plex-sans"
+                  },
+                  {
+                    "option": "source-sans-3"
+                  },
+                  {
+                    "option": "bastliga-one"
+                  },
+                  {
+                    "option": "beiruth"
+                  },
+                  {
+                    "option": "bidena-trial"
+                  },
+                  {
+                    "option": "blackbones-demo"
+                  },
+                  {
+                    "option": "geishta"
+                  },
+                  {
+                    "option": "gondens-demo"
+                  },
+                  {
+                    "option": "jalliya"
+                  },
+                  {
+                    "option": "karena-serif"
+                  },
+                  {
+                    "option": "megazine-poster"
+                  },
+                  {
+                    "option": "mileast"
+                  },
+                  {
+                    "option": "milkyway-demo"
+                  },
+                  {
+                    "option": "mokgech"
+                  },
+                  {
+                    "option": "quivert"
+                  },
+                  {
+                    "option": "rooster-personal-use"
+                  },
+                  {
+                    "option": "rustic-roadway-personal-use"
+                  },
+                  {
+                    "option": "segoe-ui-this"
+                  },
+                  {
+                    "option": "shopie-script-demo"
+                  },
+                  {
+                    "option": "tahoma"
+                  },
+                  {
+                    "option": "transcity"
+                  },
+                  {
+                    "option": "verdana"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "fuente_parrafo",
+              "fieldType": "dropdown",
+              "defaultValue": "roboto",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "roboto"
+                  },
+                  {
+                    "option": "poppins"
+                  },
+                  {
+                    "option": "inter"
+                  },
+                  {
+                    "option": "montserrat"
+                  },
+                  {
+                    "option": "open-sans"
+                  },
+                  {
+                    "option": "nunito"
+                  },
+                  {
+                    "option": "mulish"
+                  },
+                  {
+                    "option": "manrope"
+                  },
+                  {
+                    "option": "work-sans"
+                  },
+                  {
+                    "option": "dm-sans"
+                  },
+                  {
+                    "option": "heebo"
+                  },
+                  {
+                    "option": "archivo"
+                  },
+                  {
+                    "option": "cinzel"
+                  },
+                  {
+                    "option": "cinzel-decorative"
+                  },
+                  {
+                    "option": "cormorant"
+                  },
+                  {
+                    "option": "ibm-plex-sans"
+                  },
+                  {
+                    "option": "source-sans-3"
+                  },
+                  {
+                    "option": "bastliga-one"
+                  },
+                  {
+                    "option": "beiruth"
+                  },
+                  {
+                    "option": "bidena-trial"
+                  },
+                  {
+                    "option": "blackbones-demo"
+                  },
+                  {
+                    "option": "geishta"
+                  },
+                  {
+                    "option": "gondens-demo"
+                  },
+                  {
+                    "option": "jalliya"
+                  },
+                  {
+                    "option": "karena-serif"
+                  },
+                  {
+                    "option": "megazine-poster"
+                  },
+                  {
+                    "option": "mileast"
+                  },
+                  {
+                    "option": "milkyway-demo"
+                  },
+                  {
+                    "option": "mokgech"
+                  },
+                  {
+                    "option": "quivert"
+                  },
+                  {
+                    "option": "rooster-personal-use"
+                  },
+                  {
+                    "option": "rustic-roadway-personal-use"
+                  },
+                  {
+                    "option": "segoe-ui-this"
+                  },
+                  {
+                    "option": "shopie-script-demo"
+                  },
+                  {
+                    "option": "tahoma"
+                  },
+                  {
+                    "option": "transcity"
+                  },
+                  {
+                    "option": "verdana"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "fuente_pregunta",
+              "fieldType": "dropdown",
+              "defaultValue": "roboto",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "roboto"
+                  },
+                  {
+                    "option": "poppins"
+                  },
+                  {
+                    "option": "inter"
+                  },
+                  {
+                    "option": "montserrat"
+                  },
+                  {
+                    "option": "open-sans"
+                  },
+                  {
+                    "option": "nunito"
+                  },
+                  {
+                    "option": "mulish"
+                  },
+                  {
+                    "option": "manrope"
+                  },
+                  {
+                    "option": "work-sans"
+                  },
+                  {
+                    "option": "dm-sans"
+                  },
+                  {
+                    "option": "heebo"
+                  },
+                  {
+                    "option": "archivo"
+                  },
+                  {
+                    "option": "cinzel"
+                  },
+                  {
+                    "option": "cinzel-decorative"
+                  },
+                  {
+                    "option": "cormorant"
+                  },
+                  {
+                    "option": "ibm-plex-sans"
+                  },
+                  {
+                    "option": "source-sans-3"
+                  },
+                  {
+                    "option": "bastliga-one"
+                  },
+                  {
+                    "option": "beiruth"
+                  },
+                  {
+                    "option": "bidena-trial"
+                  },
+                  {
+                    "option": "blackbones-demo"
+                  },
+                  {
+                    "option": "geishta"
+                  },
+                  {
+                    "option": "gondens-demo"
+                  },
+                  {
+                    "option": "jalliya"
+                  },
+                  {
+                    "option": "karena-serif"
+                  },
+                  {
+                    "option": "megazine-poster"
+                  },
+                  {
+                    "option": "mileast"
+                  },
+                  {
+                    "option": "milkyway-demo"
+                  },
+                  {
+                    "option": "mokgech"
+                  },
+                  {
+                    "option": "quivert"
+                  },
+                  {
+                    "option": "rooster-personal-use"
+                  },
+                  {
+                    "option": "rustic-roadway-personal-use"
+                  },
+                  {
+                    "option": "segoe-ui-this"
+                  },
+                  {
+                    "option": "shopie-script-demo"
+                  },
+                  {
+                    "option": "tahoma"
+                  },
+                  {
+                    "option": "transcity"
+                  },
+                  {
+                    "option": "verdana"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "fuente_respuesta",
+              "fieldType": "dropdown",
+              "defaultValue": "roboto",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "roboto"
+                  },
+                  {
+                    "option": "poppins"
+                  },
+                  {
+                    "option": "inter"
+                  },
+                  {
+                    "option": "montserrat"
+                  },
+                  {
+                    "option": "open-sans"
+                  },
+                  {
+                    "option": "nunito"
+                  },
+                  {
+                    "option": "mulish"
+                  },
+                  {
+                    "option": "manrope"
+                  },
+                  {
+                    "option": "work-sans"
+                  },
+                  {
+                    "option": "dm-sans"
+                  },
+                  {
+                    "option": "heebo"
+                  },
+                  {
+                    "option": "archivo"
+                  },
+                  {
+                    "option": "cinzel"
+                  },
+                  {
+                    "option": "cinzel-decorative"
+                  },
+                  {
+                    "option": "cormorant"
+                  },
+                  {
+                    "option": "ibm-plex-sans"
+                  },
+                  {
+                    "option": "source-sans-3"
+                  },
+                  {
+                    "option": "bastliga-one"
+                  },
+                  {
+                    "option": "beiruth"
+                  },
+                  {
+                    "option": "bidena-trial"
+                  },
+                  {
+                    "option": "blackbones-demo"
+                  },
+                  {
+                    "option": "geishta"
+                  },
+                  {
+                    "option": "gondens-demo"
+                  },
+                  {
+                    "option": "jalliya"
+                  },
+                  {
+                    "option": "karena-serif"
+                  },
+                  {
+                    "option": "megazine-poster"
+                  },
+                  {
+                    "option": "mileast"
+                  },
+                  {
+                    "option": "milkyway-demo"
+                  },
+                  {
+                    "option": "mokgech"
+                  },
+                  {
+                    "option": "quivert"
+                  },
+                  {
+                    "option": "rooster-personal-use"
+                  },
+                  {
+                    "option": "rustic-roadway-personal-use"
+                  },
+                  {
+                    "option": "segoe-ui-this"
+                  },
+                  {
+                    "option": "shopie-script-demo"
+                  },
+                  {
+                    "option": "tahoma"
+                  },
+                  {
+                    "option": "transcity"
+                  },
+                  {
+                    "option": "verdana"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "tamano_fuente",
+              "placeholder": "48",
+              "defaultValue": "48"
+            },
+            {
+              "fieldLabel": "margen_arriba",
+              "placeholder": "50",
+              "defaultValue": "50"
+            },
+            {
+              "fieldLabel": "margen_izquierda",
+              "placeholder": "50",
+              "defaultValue": "50"
+            },
+            {
+              "fieldLabel": "margen_derecha",
+              "placeholder": "50",
+              "defaultValue": "50"
+            },
+            {
+              "fieldLabel": "margen_abajo",
+              "placeholder": "50",
+              "defaultValue": "50"
+            },
+            {
+              "fieldLabel": "alineacion",
+              "fieldType": "dropdown",
+              "defaultValue": "centro",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "izquierda"
+                  },
+                  {
+                    "option": "centro"
+                  },
+                  {
+                    "option": "derecha"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "fix_visual",
+              "fieldType": "textarea",
+              "placeholder": "Escena 2: fondo oscuro"
+            },
+            {
+              "fieldLabel": "es_correccion",
+              "fieldType": "checkbox",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Solo slides (no DALL-E)"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "forzar_video",
+              "fieldType": "checkbox",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "Forzar generacion de video"
+                  }
+                ]
+              }
+            },
+            {
+              "fieldLabel": "formato_video",
+              "fieldType": "dropdown",
+              "defaultValue": "720p",
+              "fieldOptions": {
+                "values": [
+                  {
+                    "option": "720p"
+                  },
+                  {
+                    "option": "360p"
+                  },
+                  {
+                    "option": "720p,360p"
+                  }
+                ]
+              },
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -6880,
+        1056
+      ],
+      "id": "05ebe270-3612-4b50-b386-1815d765e959",
+      "name": "Formulario",
+      "webhookId": "devdop-v4"
+    },
+    {
+      "parameters": {
+        "jsCode": "const form = $input.item.json;\nconst sanitize = (t) => t ? t.replace(/[\\\\\"'`]/g, '').replace(/[\\n\\r]/g, ' ').trim() : '';\nconst usarIA = Array.isArray(form.usar_ia) && form.usar_ia.length > 0;\nconst esCorreccion = Array.isArray(form.es_correccion) && form.es_correccion.length > 0;\nconst forzarVideo = Array.isArray(form.forzar_video) && form.forzar_video.length > 0;\n\nconst numEscenas = form.num_escenas || '5';\nconst caracteresObj = form.caracteres_objetivo || '3000';\n\nlet instruccion = form.modo_video === 'educativa'\n    ? (usarIA ? 'Genera un guion educativo DETALLADO. Las respuestas deben ser EXTENSAS, EXPLICATIVAS y PROFUNDAS para cumplir estrictamente con el objetivo de caracteres. No hagas respuestas cortas.' : 'Organiza en Pregunta/Respuesta, NO modifiques texto')\n    : (usarIA ? 'Genera guion narrativo cinematografico' : 'Divide en escenas, NO modifiques texto');\n\nreturn {\n    json: {\n        instruccion_ia: instruccion,\n        texto_usuario: sanitize(form.input_texto),\n        modo: form.modo_video,\n        idioma: form.idioma,\n        filtro: form.filtro,\n        usar_ia: usarIA,\n        es_correccion: esCorreccion,\n        forzar_video: forzarVideo,\n        num_escenas: numEscenas,\n        caracteres_objetivo: caracteresObj,\n        formato_video: form.formato_video || '720p',\n        color_titulo: form.color_titulo || '#FFD700',\n        color_parrafo: form.color_parrafo || '#FFFFFF',\n        color_pregunta: form.color_pregunta || '#00BFFF',\n        color_respuesta: form.color_respuesta || '#32CD32',\n        fuente_titulo: form.fuente_titulo || 'roboto',\n        fuente_parrafo: form.fuente_parrafo || 'roboto',\n        fuente_pregunta: form.fuente_pregunta || 'roboto',\n        fuente_respuesta: form.fuente_respuesta || 'roboto',\n        tamano_fuente: form.tamano_fuente || '48',\n        margen_arriba: form.margen_arriba || '100',\n        margen_izquierda: form.margen_izquierda || '50',\n        margen_derecha: form.margen_derecha || '50',\n        margen_abajo: form.margen_abajo || '50',\n        alineacion: form.alineacion || 'izquierda',\n        fix_visual: form.fix_visual || ''\n    }\n};\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -6624,
+        1056
+      ],
+      "id": "82664718-d9eb-4aeb-923b-e2b2537c7c2a",
+      "name": "Preparar Datos"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://openrouter.ai/api/v1/chat/completions",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer TU_API_KEY_OPENROUTER"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: 'openai/gpt-4o-mini', messages: [{ role: 'system', content: $json.instruccion_ia + '. Idioma: ' + $json.idioma + '. IMPORTANTE: Genera EXACTAMENTE ' + $json.num_escenas + ' escenas. El texto total debe tener aproximadamente ' + $json.caracteres_objetivo + ' caracteres. Distribuye el contenido equitativamente entre las escenas. Responde SOLO JSON valido.' }, { role: 'user', content: 'Texto: ' + $json.texto_usuario + '\\n\\nFormato:\\n' + ($json.modo === 'educativa' ? '{\"scenes\":[{\"pregunta\":\"...\",\"respuesta\":\"...\",\"image_prompt\":\"descripcion visual cinematografica en ingles\"}]}' : '{\"scenes\":[{\"titulo\":\"...\",\"parrafo\":\"parrafo extenso y detallado\",\"image_prompt\":\"descripcion visual cinematografica en ingles\"}]}') }], response_format: { type: 'json_object' } }) }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -6384,
+        1056
+      ],
+      "id": "a7311f5e-3390-4a5e-b51e-7162807ea2b3",
+      "name": "Cerebro IA",
+      "retryOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = items[0].json;\nlet raw = item.choices?.[0]?.message?.content || item.content || '';\nlet parsed;\ntry { parsed = JSON.parse(raw.replace(/```json/g,'').replace(/```/g,'').trim()); } catch(e) { throw new Error('JSON invalido'); }\n\nconst scenes = parsed.scenes || [];\nconst form = $node['Preparar Datos'].json;\n\nconst fixMap = {};\nif (form.fix_visual) {\n    form.fix_visual.split('\\n').forEach(line => {\n        const m = line.match(/[Ee]scena\\s*(\\d+):\\s*(.+)/);\n        if (m) fixMap[parseInt(m[1])] = m[2].trim();\n    });\n}\n\nconst sanitize = (s) => s ? s.replace(/[\\\\\\\"'`\\n\\r]/g, ' ').replace(/\\s+/g, ' ').trim() : '';\n\nconst intros = ['Veamos la siguiente pregunta.', 'Ahora, preguntemonos:', 'Continuemos con esto:', 'Aqui viene otra pregunta interesante.', 'Vamos con la siguiente:'];\nconst transiciones = ['La respuesta es:', 'Pues bien,', 'Y la respuesta es que', 'Resulta que', 'La verdad es que'];\nconst cierres = ['Interesante, verdad?', 'Algo para reflexionar.', 'Sigamos adelante.', '', ''];\n\nconst guionData = JSON.stringify({ scenes: scenes, modo: form.modo, idioma: form.idioma });\nconst guionBase64 = Buffer.from(guionData).toString('base64');\n\nreturn scenes.map((s, i) => {\n    const num = i + 1;\n    const total = scenes.length;\n    let prompt = s.image_prompt || '';\n    if (fixMap[num]) prompt = fixMap[num] + '. ' + prompt;\n    \n    let texto_tts = '';\n    if (form.modo === 'educativa') {\n        const intro = num === 1 ? 'Comencemos con nuestra primera pregunta.' : intros[num % intros.length];\n        const trans = transiciones[num % transiciones.length];\n        const cierre = num === total ? 'Y con esto terminamos. Gracias por acompanarnos.' : cierres[num % cierres.length];\n        texto_tts = `${intro} ${s.pregunta}? ${trans} ${s.respuesta}. ${cierre}`;\n    } else {\n        texto_tts = (s.titulo || '') + '. ' + (s.parrafo || s.texto || '');\n    }\n    \n    return {\n        json: {\n            scene_id: num,\n            total: total,\n            modo: form.modo,\n            idioma: form.idioma,\n            filtro: form.filtro,\n            formato_video: form.formato_video || '720p',\n            fuente_titulo: form.fuente_titulo,\n            fuente_parrafo: form.fuente_parrafo,\n            fuente_pregunta: form.fuente_pregunta,\n            fuente_respuesta: form.fuente_respuesta,\n            tamano_fuente: form.tamano_fuente,\n            margen_arriba: form.margen_arriba,\n            margen_izquierda: form.margen_izquierda,\n            margen_derecha: form.margen_derecha,\n            margen_abajo: form.margen_abajo,\n            alineacion: form.alineacion,\n            es_correccion: form.es_correccion,\n            color_titulo: form.color_titulo,\n            color_parrafo: form.color_parrafo,\n            color_pregunta: form.color_pregunta,\n            color_respuesta: form.color_respuesta,\n            pregunta: sanitize(s.pregunta),\n            respuesta: sanitize(s.respuesta),\n            titulo: sanitize(s.titulo),\n            parrafo: sanitize(s.parrafo || s.texto),\n            image_prompt: sanitize(prompt),\n            texto_tts: sanitize(texto_tts),\n            guion_json: num === 1 ? guionData : '',\n            guion_base64: num === 1 ? guionBase64 : ''\n        }\n    };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -6128,
+        1056
+      ],
+      "id": "be127ba0-dd25-4697-8f77-79c6c4c94df7",
+      "name": "Parsear Escenas"
+    },
+    {
+      "parameters": {
+        "command": "=python -c \"import base64; open('C:/generador-video-automatico-n8n-IA/escenas_temp.json','wb').write(base64.b64decode('{{ $json.guion_base64 }}'))\" & python \"C:/generador-video-automatico-n8n-IA/exportar_guion.py\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -6000,
+        1200
+      ],
+      "id": "guion-export-001",
+      "name": "Guardar Guion",
+      "executeOnce": true,
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "options": {
+          "reset": false
+        }
+      },
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -5872,
+        1056
+      ],
+      "id": "29ea5c29-7eaa-4c29-ab9b-48d339720524",
+      "name": "Loop"
+    },
+    {
+      "parameters": {
+        "jsCode": "const j = $input.item.json;\nif (j.es_correccion) {\n    return { json: { ...j, skip_dalle: true } };\n}\nreturn { json: { ...j, skip_dalle: false } };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -5632,
+        1056
+      ],
+      "id": "0ede0473-c286-421e-b3e5-baecb08624c8",
+      "name": "Verificar Imagen"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.skip_dalle }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -5376,
+        1056
+      ],
+      "id": "62b480f4-063e-434c-bb77-70aaf9ff5b0f",
+      "name": "Skip DALL-E?"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        -5232,
+        1152
+      ],
+      "id": "30d16888-5ee3-4c8f-b5ec-ab7db9f6b228",
+      "name": "Esperar 5s",
+      "webhookId": "wait-dalle"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/images/generations",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer TU_API_KEY_OPENAI"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"model\": \"dall-e-3\", \"prompt\": \"={{ $json.image_prompt }}\", \"n\": 1, \"size\": \"1792x1024\", \"quality\": \"standard\", \"response_format\": \"b64_json\" }",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.3,
+      "position": [
+        -5024,
+        1152
+      ],
+      "id": "97ccc972-14ab-4a0f-aa4d-6aecb65d36ec",
+      "name": "DALL-E",
+      "retryOnFail": true,
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const prev = $node['Skip DALL-E?'].json;\nconst data = $input.item.json;\nif (data.data && data.data[0] && data.data[0].b64_json) {\n    return {\n        binary: {\n            data: {\n                data: data.data[0].b64_json,\n                mimeType: 'image/png',\n                fileExtension: 'png',\n                fileName: `escena_${prev.scene_id}.png`\n            }\n        },\n        json: prev\n    };\n}\nreturn { json: prev };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -4880,
+        1152
+      ],
+      "id": "6bb3d589-8ff4-4fff-bf81-57c337c4a261",
+      "name": "Procesar DALL-E",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "operation": "write",
+        "fileName": "=C:/generador-video-automatico-n8n-IA/IMG/escena_{{ $json.scene_id }}.png",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [
+        -4624,
+        1152
+      ],
+      "id": "4827f7c9-e119-40dc-b5ce-72e5c8161217",
+      "name": "Guardar IMG",
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "const j = $input.item.json;\nconst texto = j.texto_tts || 'Sin texto';\nreturn { json: { ...j, b64_tts: Buffer.from(texto).toString('base64') } };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -4384,
+        1056
+      ],
+      "id": "92097ceb-6bc4-4b17-b184-70b3d8c97cdf",
+      "name": "Encode TTS"
+    },
+    {
+      "parameters": {
+        "command": "=python \"C:/generador-video-automatico-n8n-IA/crear_voz_gratis.py\" \"{{ $json.b64_tts }}\" \"C:/generador-video-automatico-n8n-IA/AUDIO/audio_{{ $json.scene_id }}.mp3\" \"{{ $json.idioma }}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -4128,
+        1056
+      ],
+      "id": "0c5ae8a5-ecfe-4285-be35-7131a2ab2de6",
+      "name": "TTS",
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "return { json: $node['Encode TTS'].json };"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -3872,
+        1056
+      ],
+      "id": "6ec2414e-2dfc-496b-bddc-9929ffd9d904",
+      "name": "Restaurar JSON"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.modo }}",
+              "rightValue": "educativa",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -3632,
+        1056
+      ],
+      "id": "0679b1f2-e2f1-40f6-9670-cc541bdd3664",
+      "name": "Modo?"
+    },
+    {
+      "parameters": {
+        "command": "=python \"C:/generador-video-automatico-n8n-IA/generar_slide_educativo.py\" --entrada \"C:/generador-video-automatico-n8n-IA/IMG/escena_{{ $json.scene_id }}.png\" --pregunta \"{{ $json.pregunta }}\" --respuesta \"{{ $json.respuesta }}\" --color_pregunta \"{{ $json.color_pregunta }}\" --color_respuesta \"{{ $json.color_respuesta }}\" --fuente_pregunta \"{{ $json.fuente_pregunta }}\" --fuente_respuesta \"{{ $json.fuente_respuesta }}\" --filtro \"{{ $json.filtro }}\" --tamano_fuente \"{{ $json.tamano_fuente }}\" --margen_arriba \"{{ $json.margen_arriba }}\" --margen_izquierda \"{{ $json.margen_izquierda }}\" --margen_derecha \"{{ $json.margen_derecha }}\" --margen_abajo \"{{ $json.margen_abajo }}\" --alineacion \"{{ $json.alineacion }}\" --salida \"C:/generador-video-automatico-n8n-IA/IMGSUB/final_{{ $json.scene_id }}.jpg\" --scene_id {{ $json.scene_id }} --total {{ $json.total }}"
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3376,
+        944
+      ],
+      "id": "c28741cb-7d18-4009-9a68-a6fa42565fc7",
+      "name": "Slide Educativo",
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "command": "=python \"C:/generador-video-automatico-n8n-IA/generar_slide_narrativo.py\" --entrada \"C:/generador-video-automatico-n8n-IA/IMG/escena_{{ $json.scene_id }}.png\" --titulo \"{{ $json.titulo }}\" --parrafo \"{{ $json.parrafo }}\" --color_titulo \"{{ $json.color_titulo }}\" --color_parrafo \"{{ $json.color_parrafo }}\" --fuente_titulo \"{{ $json.fuente_titulo }}\" --fuente_parrafo \"{{ $json.fuente_parrafo }}\" --filtro \"{{ $json.filtro }}\" --tamano_fuente \"{{ $json.tamano_fuente }}\" --margen_arriba \"{{ $json.margen_arriba }}\" --margen_izquierda \"{{ $json.margen_izquierda }}\" --margen_derecha \"{{ $json.margen_derecha }}\" --margen_abajo \"{{ $json.margen_abajo }}\" --alineacion \"{{ $json.alineacion }}\" --salida \"C:/generador-video-automatico-n8n-IA/IMGSUB/final_{{ $json.scene_id }}.jpg\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -3376,
+        1200
+      ],
+      "id": "25a02c5e-3dc2-4036-8d6a-5c0be4cc9913",
+      "name": "Slide Narrativo",
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "command": "=taskkill /F /IM ffmpeg.exe /T 2>nul & python \"C:/generador-video-automatico-n8n-IA/generar_video.py\" \"{{ $json.formato_video || '720p' }}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        -5632,
+        1300
+      ],
+      "id": "eba5b6f2-7ca8-4733-bd63-b46e706bd30e",
+      "name": "Generar Video",
+      "alwaysOutputData": true,
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.forzar_video }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -6480,
+        1056
+      ],
+      "id": "6a7bbaba-cb92-4990-b16c-7e32bbdc9341",
+      "name": "Forzar Video?"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Formulario": {
+      "main": [
+        [
+          {
+            "node": "Preparar Datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar Datos": {
+      "main": [
+        [
+          {
+            "node": "Forzar Video?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Forzar Video?": {
+      "main": [
+        [
+          {
+            "node": "Generar Video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Cerebro IA",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cerebro IA": {
+      "main": [
+        [
+          {
+            "node": "Parsear Escenas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parsear Escenas": {
+      "main": [
+        [
+          {
+            "node": "Loop",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Guardar Guion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Guardar Guion": {
+      "main": []
+    },
+    "Loop": {
+      "main": [
+        [
+          {
+            "node": "Generar Video",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Verificar Imagen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verificar Imagen": {
+      "main": [
+        [
+          {
+            "node": "Skip DALL-E?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Skip DALL-E?": {
+      "main": [
+        [
+          {
+            "node": "Encode TTS",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Esperar 5s",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Esperar 5s": {
+      "main": [
+        [
+          {
+            "node": "DALL-E",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DALL-E": {
+      "main": [
+        [
+          {
+            "node": "Procesar DALL-E",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Procesar DALL-E": {
+      "main": [
+        [
+          {
+            "node": "Guardar IMG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Guardar IMG": {
+      "main": [
+        [
+          {
+            "node": "Encode TTS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Encode TTS": {
+      "main": [
+        [
+          {
+            "node": "TTS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "TTS": {
+      "main": [
+        [
+          {
+            "node": "Restaurar JSON",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Restaurar JSON": {
+      "main": [
+        [
+          {
+            "node": "Modo?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Modo?": {
+      "main": [
+        [
+          {
+            "node": "Slide Educativo",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Slide Narrativo",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slide Educativo": {
+      "main": [
+        [
+          {
+            "node": "Loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Slide Narrativo": {
+      "main": [
+        [
+          {
+            "node": "Loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Generar Video": {
+      "main": []
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "3e51d630-d61b-4f61-9f1f-ea2c9c545b11",
+  "meta": {
+    "instanceId": "a2fe27bc7473a8eabbfb59a7289992391ea39d4ad8c8055447f9c9f5b152fa8e"
+  },
+  "id": "gZgpZpnGH0nUZCUb",
+  "tags": []
+}
